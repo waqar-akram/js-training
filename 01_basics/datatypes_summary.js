@@ -19,3 +19,25 @@ const myFunction = function(){
     console.log("Hello World...")
 }
 console.log(myFunction())
+
+
+//**************** Stack and Heap Concept ***********/
+// Stack (Primitive datatype) and Heap (Non-Primitive datatype)
+// Stack is always copies the variable values into anywhere use.
+// Heap is always use Reference base values.
+
+let myFirstName = "Muhammad Waqar"
+let myLastName = myFirstName
+myLastName = "Akram"
+console.log(myFirstName)
+console.log(myLastName)
+
+let userOne = {
+    name : "Waqar",
+    age : 28
+}
+let userTwo = userOne
+userTwo.name = "Waqar akram"
+
+console.log(userOne.name)
+console.log(userTwo.name)
